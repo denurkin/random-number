@@ -21,15 +21,15 @@ function getNumber() {
 
   function rep () {
     if (stringUser === null) {
-        alert ("Игра окончена");
+        alert ("Игра окончена");   
+    } else if (isNaN(numberUser)) {
+      +alert ("Введи число");
+      getNumber();
     } else if (numberUser > number) {
      alert ("Загаданное число меньше");
      getNumber();
     } else if (numberUser < number) {
     +alert ("Загаданное число больше");
-    getNumber();
-    } else if (numberUser === isNaN()) {
-    +alert ("Введи число");
     getNumber();
     };
     };   
